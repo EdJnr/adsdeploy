@@ -1,0 +1,98 @@
+
+.why-us{
+    background : linear-gradient(to bottom right, #fff, rgb(200, 245, 200));
+    width: 100%;
+}
+.why-us-header{
+    text-align: center;
+    padding-top: 60px;
+    font-size: larger;
+}
+.why-us-header h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    margin-bottom: 25px;
+}
+.underline{
+    height: 5px;
+    width: 100px;
+    margin: auto;
+    border: 1px solid green  ;
+    margin-bottom: 45px;
+}
+.why-us-cards{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+}
+.why-us-card-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 280px;
+    margin-bottom: 90px;
+}
+.why-us-card-item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.illustration-area{
+    width: 49%;
+}
+.illustration{
+    width: 100%;
+    height: 100%;
+}
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+}
+.text-area h5{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+}
+.text-area p{
+    color:  #666;
+}
+/* RESPONSIVENESS */
+@media only screen and (max-width: 475px){
+    .why-us-header h1{
+        font-size: 25px;
+    }
+    .underline{
+        width: 80px;
+    }
+    .text-area h5{
+        font-size: 22.5px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .why-us-card-item{
+        flex-direction: column;
+    }
+    .why-us-card-item:nth-child(even){
+        flex-direction: column;
+    }
+    .illustration-area{
+        width: 90%;
+        margin: auto;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+    .text-area{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 700px){
+    .why-us-cards{
+        width: 80%;
+        margin: auto;
+    }   
+}

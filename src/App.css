@@ -1,0 +1,4 @@
+.navbar > .active {
+    border-bottom: 10px solid #333;
+    overflow-y: hidden;
+}

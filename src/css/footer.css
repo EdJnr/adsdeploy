@@ -1,0 +1,15 @@
+.footer{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1dc;
+    font-family: 'Charmonman', cursive;
+}
+.footer p{
+    font-size: 21.5px;
+    font-weight: 800;
+}
+.footer p i{
+    color: rgb(138, 14, 14);
+}

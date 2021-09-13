@@ -1,0 +1,110 @@
+.portal{
+    width: 100%;
+    height: 100vh;
+}
+.login-page-sections{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+/* ILLUSTRATION */
+#login-page-illustration{
+    padding: 40px 10px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(184, 248, 184);
+}
+.svg{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FORM */
+#login-page-form{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(242, 247, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page-form{
+   width: 80%;
+   background-color: #fff;
+   padding: 50px 10%;
+   display: flex;
+   flex-direction: column;
+}
+.form-header{
+    text-align: center;
+}
+.form-header h5{
+    font-size: 30px;
+    font-weight: lighter;
+    color: green;
+}
+.form-header h5 span{
+    color: black;
+}
+.form-header h5 span:hover{
+    cursor: pointer;
+    font-weight: 600;
+}
+.form-icon{
+    text-align: center;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.bi-person{
+    width: 100%;
+    font-size: 90px;
+}
+input{
+    width: 100%;
+    padding: 20px 12.5px;
+    background-color: rgb(242, 247, 236);
+    margin:auto;
+    margin-bottom: 20px;
+    border: 1px solid rgb(242, 247, 236);
+}
+input:hover{
+    border: 1px solid green;
+    transition: 0.5s;
+}
+input:focus{
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 3px green;
+    transition: 0.5s;
+}
+.submit{
+    text-align: center;
+}
+.login-page-submit{
+    border: none;
+    padding:18px 50px;
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+.login-page-submit:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+@media only screen and (max-width: 800px){
+    #login-page-illustration{
+        display: none;
+    }
+    #login-page-form{
+        width: 100%;
+    }
+    .login-page-form{
+        width: 90%;
+    }
+}
